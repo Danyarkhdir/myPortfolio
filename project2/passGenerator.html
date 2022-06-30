@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+
+    <!-- Link Bootstrap -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+
+    <!-- link Costum css -->
+    <link rel="stylesheet" href="./passGenerator.css" />
+
+    <!-- link fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-dark">
+    <a href="..//index.html">
+      <img class="p-3" src="./arrow-left.png" alt="arrow-left" />
+    </a>
+    <div class="container">
+      <h2 class="text-center text-white pb-4">Random Password Generator</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 pb-5">
+          <!--Form with header-->
+
+          <form>
+            <div class="card border-dark rounded-0">
+              <div class="card-header p-0">
+                <div class="bg-light text-white text-center py-2">
+                  <h3 class="text-dark">
+                    <i class="fa fa-random fa-sm text-dark"></i> Random Password
+                  </h3>
+                </div>
+              </div>
+              <div class="card-body p-3">
+                <!--Body-->
+                <!-- Width  -->
+                <div class="form-group">
+                  <div class="input-group mb-2 inputs">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <span class="text-dark" style="width: 120px"
+                          >Password Length</span
+                        >
+                      </div>
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="length"
+                      placeholder="Enter Width..."
+                      value="0"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button
+                    class="btn btn-info btn-block rounded-0 py-2 mb-3"
+                    type="button"
+                    onclick="randPassword()"
+                  >
+                    <i class="fa fa-check fa-s"> Generate </i>
+                  </button>
+                </div>
+                <div id="new-url-text" class="form-group mb-0">
+                  <div class="input-group mb-2 inputs">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <span
+                          onclick="copy()"
+                          class="text-dark"
+                          style="width: 50px"
+                          ><i class="fa fa-clipboard"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <span
+                      class="p-2"
+                      style="border-radius: 5px; width: 70%"
+                      id="new-url"
+                    ></span>
+                  </div>
+                </div>
+                <label
+                  class="text-muted label-text"
+                  id="new-url-label"
+                  for="new-url-text"
+                ></label>
+              </div>
+            </div>
+          </form>
+          <!--Form with header-->
+        </div>
+      </div>
+    </div>
+    <script src="./passGenerator.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
