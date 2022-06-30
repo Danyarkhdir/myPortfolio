@@ -7,6 +7,8 @@ function randPassword(){
         password += charset.charAt(Math.floor(Math.random() * charset.length));   
     }
     document.getElementById("new-url").innerText=password;
+    let txt=document.getElementById('new-url-label');
+    txt.innerText="";
 }
 
 
