@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+span {
+  width: 50px;
+}
+
+.inputs:hover {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.inputs:active {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.label-text {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+}

@@ -62,6 +62,12 @@ body {
 .description > h4 {
   font-size: 20px;
 }
+
+.resizer {
+  width: 100%;
+  opacity: 0.8;
+}
+
 @media (max-width: 600px) {
   .myImage {
     width: 255px;
