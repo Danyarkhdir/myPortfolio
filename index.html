@@ -24,9 +24,45 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
 
-    <title>My Portfolio</title>
+    <!-- title icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon2.ico"
+    />
+
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./ContactFrom_v1/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./ContactFrom_v1/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    
+   
+    
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./ContactFrom_v1/css/main.css"
+    />
+
+    <title>Portfolio - Danyar Khdir</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <!-- start of Navbar Section -->
     <section>
       <nav
@@ -55,28 +91,28 @@
           <div class="w-75 p-0 d-flex justify-content-around navbar-nav">
             <div class="d-flex align-items-center">
               <i class="bi bi-file-person-fill text-white nav-item"></i>
-              <a class="nav-item nav-link text-white ml-1" href="#about-me"
+              <a class="nav-item nav-link text-white ml-1 font-weight-bold" href="#about-me"
                 >About Me</a
               >
             </div>
             <hr class="ml-0 mt-0 mb-0 w-50 border-white d-md-none" />
             <div class="d-flex align-items-center">
               <i class="bi bi-star-fill text-white nav-item"></i>
-              <a class="nav-item nav-link text-white ml-1" href="#skills"
+              <a class="nav-item nav-link text-white ml-1 font-weight-bold" href="#skills"
                 >Skills</a
               >
             </div>
             <hr class="ml-0 mt-0 mb-0 w-50 border-white d-md-none" />
             <div class="d-flex align-items-center">
               <i class="bi bi-file-earmark-zip-fill text-white nav-item"></i>
-              <a class="nav-item nav-link text-white ml-1" href="#projects"
+              <a class="nav-item nav-link text-white ml-1 font-weight-bold" href="#projects"
                 >Projects</a
               >
             </div>
             <hr class="ml-0 mt-0 mb-0 w-50 border-white d-md-none" />
             <div class="d-flex align-items-center contact-btn">
               <i class="bi bi-envelope-fill text-white nav-item p-0"></i>
-              <a class="nav-item nav-link text-white ml-1" href="#contact"
+              <a class="nav-item nav-link text-white ml-1 font-weight-bold" href="#contact"
                 >Contact</a
               >
             </div>
@@ -253,100 +289,96 @@
       </div>
     </section>
     <!-- End of Projects section -->
-    <!-- Start of About Me section   -->
+
+    <!-- Start of Contact section   -->
     <section class="mb-5">
-      <div class="px-5 py-5 w-100">
+      <div class="contact1 bg-dark">
         <h3
           class="pb-3 border-bottom text-center mt-5 mr-auto ml-auto w-100 font-weight-bold text-white mb-3"
           id="contact"
         >
           Contact Me
         </h3>
-        <div class="container contact">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="contact-info">
-                <img
-                  src="https://image.ibb.co/kUASdV/contact-image.png"
-                  alt="image"
-                />
-                <h2>Contact Me</h2>
-                <h4>I would love to hear from you !</h4>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="contact-form">
-                <div class="form-group">
-                  <label class="control-label" for="fname">First Name:</label>
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="fname"
-                      placeholder="Enter First Name"
-                      name="fname"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label" for="lname">Last Name:</label>
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lname"
-                      placeholder="Enter Last Name"
-                      name="lname"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label" for="email">Email:</label>
-                  <div class="col-sm-10">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Enter email"
-                      name="email"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label" for="comment">Comment:</label>
-                  <div class="col-sm-10">
-                    <textarea
-                      class="form-control"
-                      rows="5"
-                      id="comment"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="container-contact1 mt-4">
+          <div class="contact1-pic js-tilt" data-tilt>
+            <img src="./ContactFrom_v1/images/img-01.png" alt="IMG" />
           </div>
+
+          <form class="contact1-form  " onsubmit="return false">
+            <span class="contact1-form-title"> Get in touch </span>
+
+            <div
+              class="wrap-input1 "
+            >
+              <input
+                class="input1"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+              <span class="shadow-input1"></span>
+            </div>
+
+            <div
+              class="wrap-input1 "
+            >
+              <input
+                class="input1"
+                id="sendEmail"
+                type="text"
+                name="email"
+                placeholder="Email"
+              />
+              <span class="shadow-input1"></span>
+            </div>
+
+            <div
+              class="wrap-input1 validate-input"
+              data-validate="Subject is required"
+            >
+              <input
+                class="input1"
+                id="subject"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+              />
+              <span class="shadow-input1"></span>
+            </div>
+
+            <div
+              class="wrap-input1"
+            >
+              <textarea
+                class="input1"
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Message"
+              /></textarea>
+              <span class="shadow-input1"></span>
+            </div>
+
+            <div class="container-contact1-form-btn">
+              <button class="contact1-form-btn" id="send">
+                <span class="font-weight-bold">
+                  Send Email
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
-    <!-- End of About Me section   -->
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <!-- End of Contact section   -->
+
+
+    <script>
+      $(".js-tilt").tilt({
+        scale: 1.1,
+      });
+    </script>
 
     <script src="./script.js"></script>
     <script
